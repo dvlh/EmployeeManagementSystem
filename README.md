@@ -1,16 +1,32 @@
-# EmployeeManagementSystem
+# 🏢 Employee Management System (EMS)
+A Robust Java-based Organizational Solution
+🌟 Overview
+This project is a high-performance management tool designed to bridge the gap between human resource needs and automated data processing. It manages diverse employee roles—Managers, Developers, and Designers—using advanced Object-Oriented principles.
 
-A Java-based system designed to manage different types of employees (Managers, Developers, and Designers). The system handles automated payroll calculations (bonuses), leave management, and real-time state tracking (Working vs. On Leave) using Object-Oriented Programming (OOP) principles.
+The system doesn't just store names; it handles automated payroll calculations, leave history tracking, and real-time status monitoring via a command-driven interface.
 
-🚀 Features
+🛠️ Technical Architecture
+Core Logic & OOP Implementation
 
-Polymorphism: Different bonus calculations for Developer (12%), Designer (10%), and Manager (15%).
+Abstraction: The Employee class serves as a blueprint, ensuring every staff member has a name, ID, and salary while keeping the specific bonus logic flexible.
 
-
-Leave Management: Managers can approve leaves and track history for specific employees.
-
-
-State Tracking: Real-time updates of employee status between "Working" and "Leave".
+Polymorphism: The system automatically calculates bonuses based on the specific job type:
 
 
-File I/O: Processes batch commands from an input.txt file and generates a detailed output.txt report.
+Developer: 12% bonus.
+
+
+Designer: 10% bonus.
+
+
+Manager: 15% bonus.
+
+
+Interfaces: The Approver interface is used by the Manager class to handle leave requests and status updates, ensuring clean, modular code.
+
+Data Handling
+
+Input Processing: Reads from input.txt using a Scanner to parse comma-separated commands.
+
+
+Reporting: Generates a professional output.txt report summarizing all transactions and current staff records
